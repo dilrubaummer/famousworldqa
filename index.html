@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Famous World - Electrical Contracting Services</title>
+    <style>
+        :root {
+            --primary: #1a237e;
+            --secondary: #ffd700;
+            --light: #f5f5f5;
+            --dark: #333;
+        }
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: system-ui, -apple-system, sans-serif;
+        }
+
+        body {
+            line-height: 1.6;
+            color: var(--dark);
+        }
+
+        header {
+            background-color: var(--primary);
+            color: white;
+            padding: 1rem;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+
+        nav {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .nav-links a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        .hero {
+            height: 60vh;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('/api/placeholder/1200/800');
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: white;
+        }
+
+        .hero-content {
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        section {
+            padding: 4rem 2rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: var(--primary);
+        }
+
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .service-card {
+            background: white;
+            padding: 2rem;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2rem;
+            margin-top: 2rem;
+        }
+
+        .value-card {
+            text-align: center;
+            padding: 1.5rem;
+            background: var(--light);
+            border-radius: 5px;
+        }
+
+        .value-card h3 {
+            color: var(--primary);
+            margin-bottom: 1rem;
+        }
+
+        .contact-section {
+            background-color: var(--primary);
+            color: white;
+            padding: 3rem 2rem;
+        }
+
+        .contact-info {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1rem;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+        }
+
+        footer {
+            background-color: var(--dark);
+            color: white;
+            padding: 1rem;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+            }
+
+            .hero h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">FAMOUS WORLD</div>
+            <div class="nav-links">
+                <a href="#mission">Mission</a>
+                <a href="#services">Services</a>
+                <a href="#values">Values</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </nav>
+    </header>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Leading Electrical Contracting Services in Qatar</h1>
+            <p>Excellence in electrical services with adherence to Kahramaa standards</p>
+        </div>
+    </section>
+
+    <section id="mission">
+        <div class="container">
+            <h2 class="section-title">Our Mission</h2>
+            <p>We take pride in our commitment to excellence and adherence to the highest standards of safety and quality. Our electrical contracting services strictly adhere to the rules and regulations set forth by Kahramaa, reflecting our dedication to delivering reliable and compliant solutions for our valued clients.</p>
+            
+            <h2 class="section-title" style="margin-top: 3rem;">Our Vision</h2>
+            <p>At FAMOUS WORLD, we strive every day to learn, assess and implement the newest technologies and best practices while honoring our legacy of providing reliable, quality electrical services. We are committed to providing good work for a fair price. Our focus on sustained, controlled growth will never come at the expense of the personal service our customers have come to know and expect. And our commitment to our employees is second to none; we want them to know they are working for a family-owned business that puts its employees first and looks out for their best interests.</p>
+        </div>
+    </section>
+
+    <section id="values" style="background-color: var(--light);">
+        <div class="container">
+            <h2 class="section-title">Our Values</h2>
+            <p style="text-align: center; margin-bottom: 2rem;">FAMOUS WORLD believes that conducting business ethically and being a responsible company are fundamental to the success of the company. We stand by ethical business practice that is consistent with our mission and core values.</p>
+            <div class="values-grid">
+                <div class="value-card">
+                    <h3>Integrity</h3>
+                    <p>We will always safeguard the Integrity of our employees, customers or Company.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Excellence</h3>
+                    <p>We vow to do our best to exceed our customers' expectations.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Innovation</h3>
+                    <p>We are passionate about creating new solutions for crafting a better tomorrow for our Country.</p>
+                </div>
+                <div class="value-card">
+                    <h3>Diversity</h3>
+                    <p>We value and respect diversity as a source of inspiration and creativity with our clients, our employees and suppliers.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="services">
+        <div class="container">
+            <h2 class="section-title">Our Services</h2>
+            <div class="services-grid">
+                <div class="service-card">
+                    <h3>Electrical Services</h3>
+                    <p>A wide range of electrical services, including design, installation, and maintenance of electrical systems, such as distribution board, power, and control systems, as well as troubleshooting and repairs.</p>
+                </div>
+                <div class="service-card">
+                    <h3>ELV Works</h3>
+                    <p>Design, installation, and maintenance of extra-low voltage systems, such as security, fire alarm, PA SYSTEM, CCTV BMS, ACCESS DOOR CONTROL, PLC SCADA, TELEPHONE, AV systems and communications systems.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Solar Systems</h3>
+                    <p>Offering both on-grid and off-grid solar solutions for homes, schools, and businesses. Our systems are individually sized to suit user needs and can be implemented in remote areas or scattered business entities.</p>
+                </div>
+                <div class="service-card">
+                    <h3>Building Maintenance</h3>
+                    <p>Comprehensive electrical maintenance services including inspection, testing, and maintaining electrical systems in the workplace. We ensure the safety and reliability of wiring, circuit breakers, lighting, outlets, and electrical appliances.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title" style="color: white;">Contact Us</h2>
+            <div class="contact-info">
+                <p>📞 +974 5141 6868</p>
+                <p>✉️ info@famousworldqa.com</p>
+                <p>📍 Doha, Qatar</p>
+                <p>📫 P.O. Box - 8472</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 FAMOUS WORLD. All rights reserved.</p>
+    </footer>
+</body>
+</html>
+
